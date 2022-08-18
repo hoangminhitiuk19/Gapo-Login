@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DA28ADE95600388AED /* AppDelegate.swift */; };
+		B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DC28ADE95600388AED /* SceneDelegate.swift */; };
+		B6F124DF28ADE95600388AED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DE28ADE95600388AED /* ViewController.swift */; };
+		B6F124E228ADE95600388AED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E028ADE95600388AED /* Main.storyboard */; };
+		B6F124E428ADE96200388AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E328ADE96200388AED /* Assets.xcassets */; };
+		B6F124E728ADE96200388AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E528ADE96200388AED /* LaunchScreen.storyboard */; };
+		B6F124F228ADE96300388AED /* Gapo_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124F128ADE96300388AED /* Gapo_LoginTests.swift */; };
+		B6F124FC28ADE96400388AED /* Gapo_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124FB28ADE96400388AED /* Gapo_LoginUITests.swift */; };
+		B6F124FE28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124FD28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6F124EE28ADE96300388AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6F124CF28ADE95600388AED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6F124D628ADE95600388AED;
+			remoteInfo = "Gapo-Login";
+		};
+		B6F124F828ADE96400388AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6F124CF28ADE95600388AED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6F124D628ADE95600388AED;
+			remoteInfo = "Gapo-Login";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6F124D728ADE95600388AED /* Gapo-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gapo-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F124DA28ADE95600388AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6F124DC28ADE95600388AED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B6F124DE28ADE95600388AED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6F124E128ADE95600388AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6F124E328ADE96200388AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6F124E628ADE96200388AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6F124E828ADE96200388AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F124ED28ADE96300388AED /* Gapo-LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gapo-LoginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F124F128ADE96300388AED /* Gapo_LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gapo_LoginTests.swift; sourceTree = "<group>"; };
+		B6F124F728ADE96400388AED /* Gapo-LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gapo-LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F124FB28ADE96400388AED /* Gapo_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gapo_LoginUITests.swift; sourceTree = "<group>"; };
+		B6F124FD28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gapo_LoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6F124D428ADE95600388AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F124EA28ADE96300388AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F124F428ADE96400388AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6F124CE28ADE95600388AED = {
+			isa = PBXGroup;
+			children = (
+				B6F124D928ADE95600388AED /* Gapo-Login */,
+				B6F124F028ADE96300388AED /* Gapo-LoginTests */,
+				B6F124FA28ADE96400388AED /* Gapo-LoginUITests */,
+				B6F124D828ADE95600388AED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6F124D828ADE95600388AED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6F124D728ADE95600388AED /* Gapo-Login.app */,
+				B6F124ED28ADE96300388AED /* Gapo-LoginTests.xctest */,
+				B6F124F728ADE96400388AED /* Gapo-LoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6F124D928ADE95600388AED /* Gapo-Login */ = {
+			isa = PBXGroup;
+			children = (
+				B6F124DA28ADE95600388AED /* AppDelegate.swift */,
+				B6F124DC28ADE95600388AED /* SceneDelegate.swift */,
+				B6F124DE28ADE95600388AED /* ViewController.swift */,
+				B6F124E028ADE95600388AED /* Main.storyboard */,
+				B6F124E328ADE96200388AED /* Assets.xcassets */,
+				B6F124E528ADE96200388AED /* LaunchScreen.storyboard */,
+				B6F124E828ADE96200388AED /* Info.plist */,
+			);
+			path = "Gapo-Login";
+			sourceTree = "<group>";
+		};
+		B6F124F028ADE96300388AED /* Gapo-LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6F124F128ADE96300388AED /* Gapo_LoginTests.swift */,
+			);
+			path = "Gapo-LoginTests";
+			sourceTree = "<group>";
+		};
+		B6F124FA28ADE96400388AED /* Gapo-LoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6F124FB28ADE96400388AED /* Gapo_LoginUITests.swift */,
+				B6F124FD28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift */,
+			);
+			path = "Gapo-LoginUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6F124D628ADE95600388AED /* Gapo-Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6F1250128ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-Login" */;
+			buildPhases = (
+				B6F124D328ADE95600388AED /* Sources */,
+				B6F124D428ADE95600388AED /* Frameworks */,
+				B6F124D528ADE95600388AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gapo-Login";
+			productName = "Gapo-Login";
+			productReference = B6F124D728ADE95600388AED /* Gapo-Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6F124EC28ADE96300388AED /* Gapo-LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6F1250428ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-LoginTests" */;
+			buildPhases = (
+				B6F124E928ADE96300388AED /* Sources */,
+				B6F124EA28ADE96300388AED /* Frameworks */,
+				B6F124EB28ADE96300388AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6F124EF28ADE96300388AED /* PBXTargetDependency */,
+			);
+			name = "Gapo-LoginTests";
+			productName = "Gapo-LoginTests";
+			productReference = B6F124ED28ADE96300388AED /* Gapo-LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6F124F628ADE96400388AED /* Gapo-LoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6F1250728ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-LoginUITests" */;
+			buildPhases = (
+				B6F124F328ADE96400388AED /* Sources */,
+				B6F124F428ADE96400388AED /* Frameworks */,
+				B6F124F528ADE96400388AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6F124F928ADE96400388AED /* PBXTargetDependency */,
+			);
+			name = "Gapo-LoginUITests";
+			productName = "Gapo-LoginUITests";
+			productReference = B6F124F728ADE96400388AED /* Gapo-LoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6F124CF28ADE95600388AED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B6F124D628ADE95600388AED = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B6F124EC28ADE96300388AED = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B6F124D628ADE95600388AED;
+					};
+					B6F124F628ADE96400388AED = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B6F124D628ADE95600388AED;
+					};
+				};
+			};
+			buildConfigurationList = B6F124D228ADE95600388AED /* Build configuration list for PBXProject "Gapo-Login" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6F124CE28ADE95600388AED;
+			productRefGroup = B6F124D828ADE95600388AED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6F124D628ADE95600388AED /* Gapo-Login */,
+				B6F124EC28ADE96300388AED /* Gapo-LoginTests */,
+				B6F124F628ADE96400388AED /* Gapo-LoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6F124D528ADE95600388AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F124E728ADE96200388AED /* LaunchScreen.storyboard in Resources */,
+				B6F124E428ADE96200388AED /* Assets.xcassets in Resources */,
+				B6F124E228ADE95600388AED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F124EB28ADE96300388AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F124F528ADE96400388AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6F124D328ADE95600388AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F124DF28ADE95600388AED /* ViewController.swift in Sources */,
+				B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */,
+				B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F124E928ADE96300388AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F124F228ADE96300388AED /* Gapo_LoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F124F328ADE96400388AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F124FC28ADE96400388AED /* Gapo_LoginUITests.swift in Sources */,
+				B6F124FE28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6F124EF28ADE96300388AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6F124D628ADE95600388AED /* Gapo-Login */;
+			targetProxy = B6F124EE28ADE96300388AED /* PBXContainerItemProxy */;
+		};
+		B6F124F928ADE96400388AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6F124D628ADE95600388AED /* Gapo-Login */;
+			targetProxy = B6F124F828ADE96400388AED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6F124E028ADE95600388AED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6F124E128ADE95600388AED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6F124E528ADE96200388AED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6F124E628ADE96200388AED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6F124FF28ADE96400388AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6F1250028ADE96400388AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6F1250228ADE96400388AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T4NAG9C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gapo-Login/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Minh.Gapo-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6F1250328ADE96400388AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T4NAG9C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gapo-Login/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Minh.Gapo-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6F1250528ADE96400388AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T4NAG9C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Minh.Gapo-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gapo-Login.app/Gapo-Login";
+			};
+			name = Debug;
+		};
+		B6F1250628ADE96400388AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T4NAG9C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Minh.Gapo-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gapo-Login.app/Gapo-Login";
+			};
+			name = Release;
+		};
+		B6F1250828ADE96400388AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T4NAG9C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Minh.Gapo-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gapo-Login";
+			};
+			name = Debug;
+		};
+		B6F1250928ADE96400388AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T4NAG9C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Minh.Gapo-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gapo-Login";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6F124D228ADE95600388AED /* Build configuration list for PBXProject "Gapo-Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F124FF28ADE96400388AED /* Debug */,
+				B6F1250028ADE96400388AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6F1250128ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F1250228ADE96400388AED /* Debug */,
+				B6F1250328ADE96400388AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6F1250428ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F1250528ADE96400388AED /* Debug */,
+				B6F1250628ADE96400388AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6F1250728ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-LoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F1250828ADE96400388AED /* Debug */,
+				B6F1250928ADE96400388AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6F124CF28ADE95600388AED /* Project object */;
+}

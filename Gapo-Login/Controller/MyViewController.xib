@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController" customModule="Gapo_Login" customModuleProvider="target">
+            <connections>
+                <outlet property="alreadyHadAcount" destination="eDo-Ke-2iP" id="kGj-zz-KOd"/>
+                <outlet property="continueWithCode" destination="L09-74-rVu" id="NhU-Wk-Qgh"/>
+                <outlet property="emailTextField" destination="SrD-tj-3my" id="cxb-ac-QUv"/>
+                <outlet property="loginButton" destination="x8I-Jc-ldc" id="ke6-A3-ry4"/>
+                <outlet property="loginLabel" destination="jkT-o9-8Fm" id="7y0-ZZ-1LY"/>
+                <outlet property="passwordTextField" destination="eMh-j7-aFw" id="LWw-Nf-lJw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gapo-logo" translatesAutoresizingMaskIntoConstraints="NO" id="iWc-36-tMz">
+                    <rect key="frame" x="24" y="64" width="152" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="4iS-9A-4T1"/>
+                        <constraint firstAttribute="height" constant="30" id="Kyf-yG-rsf"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vietnam-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bNY-5x-Oka">
+                    <rect key="frame" x="266" y="64" width="85" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="HGA-DG-TN7"/>
+                        <constraint firstAttribute="height" constant="32" id="bqV-dB-eZP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkT-o9-8Fm">
+                    <rect key="frame" x="24" y="110" width="380" height="28"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="24"/>
+                    <color key="textColor" red="0.14901960784313725" green="0.15686274509803921" blue="0.17254901960784313" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaG-7e-Sja">
+                    <rect key="frame" x="24" y="142" width="163" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="gBR-fw-KOy"/>
+                        <constraint firstAttribute="width" constant="163" id="zke-qN-Uyi"/>
+                    </constraints>
+                    <color key="tintColor" red="0.18823529411764706" green="0.66274509803921566" blue="0.37647058823529411" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Email">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="SFProText-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-SO-smU">
+                    <rect key="frame" x="187" y="142" width="163" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="163" id="Fva-ia-lwc"/>
+                        <constraint firstAttribute="height" constant="48" id="Whq-2T-yy1"/>
+                    </constraints>
+                    <color key="tintColor" red="0.45098039215686275" green="0.46274509803921571" blue="0.50980392156862742" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Số điện thoại">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="SFProText-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email của bạn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SrD-tj-3my">
+                    <rect key="frame" x="24" y="202" width="380" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="R69-JM-uk8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-j7-aFw">
+                    <rect key="frame" x="25" y="263" width="380" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Ipt-MZ-b9G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGe-iA-3O5">
+                    <rect key="frame" x="236" y="328" width="157" height="31"/>
+                    <color key="tintColor" red="0.18823529411764706" green="0.66274509803921566" blue="0.37647058823529411" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Quên mật khẩu">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="SFProText-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-Jc-ldc">
+                    <rect key="frame" x="50.666666666666657" y="377" width="327" height="48"/>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.32941176470588235" blue="0.39215686274509803" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="6VF-L8-U2i"/>
+                        <constraint firstAttribute="width" constant="327" id="GMD-yy-glz"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Đăng nhập">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="SFProText-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapLoginButton" destination="-1" eventType="touchUpInside" id="ALe-Rd-cGJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoặc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlM-VK-3J5">
+                    <rect key="frame" x="170" y="567" width="88" height="17"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKg-QA-NLU">
+                    <rect key="frame" x="150" y="600" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="2G6-YF-3RP"/>
+                        <constraint firstAttribute="height" constant="48" id="2Oc-zh-zP1"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="microsoft-logo" title=""/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L33-4n-vqX">
+                    <rect key="frame" x="222" y="600" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="FBL-aO-uAF"/>
+                        <constraint firstAttribute="width" constant="48" id="pPu-cN-e2h"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="google-logo" title=""/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-Ke-2iP">
+                    <rect key="frame" x="24" y="664" width="380" height="33.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Đã có tài khoản? Đăng nhập">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="SFProText-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L09-74-rVu">
+                    <rect key="frame" x="24" y="713.33333333333337" width="380" height="33.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Tiếp tục với mã định danh">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="SFProText-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PlM-VK-3J5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="170" id="27d-6V-8Ed"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eMh-j7-aFw" secondAttribute="trailing" constant="24" id="3xw-m8-voL"/>
+                <constraint firstItem="4EF-SO-smU" firstAttribute="top" secondItem="jkT-o9-8Fm" secondAttribute="bottom" constant="4" id="5ks-jy-Wn8"/>
+                <constraint firstItem="x8I-Jc-ldc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="77X-lB-77s"/>
+                <constraint firstItem="bNY-5x-Oka" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="9bO-yB-sh4"/>
+                <constraint firstItem="bNY-5x-Oka" firstAttribute="leading" secondItem="iWc-36-tMz" secondAttribute="trailing" constant="90" id="BQ1-aQ-FUl"/>
+                <constraint firstItem="jkT-o9-8Fm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bsv-4a-dcP"/>
+                <constraint firstItem="jkT-o9-8Fm" firstAttribute="top" secondItem="iWc-36-tMz" secondAttribute="bottom" constant="16" id="GKn-sU-nUn"/>
+                <constraint firstItem="iWc-36-tMz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="HXr-jB-Iux"/>
+                <constraint firstItem="iWc-36-tMz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="IMO-oX-bji"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L09-74-rVu" secondAttribute="trailing" constant="24" id="JMO-pC-0Lf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MGe-iA-3O5" secondAttribute="trailing" constant="35" id="KGv-sO-zFy"/>
+                <constraint firstItem="L09-74-rVu" firstAttribute="top" secondItem="eDo-Ke-2iP" secondAttribute="bottom" constant="16" id="KHK-Y0-ewa"/>
+                <constraint firstItem="eDo-Ke-2iP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="LC3-gQ-kqw"/>
+                <constraint firstItem="SrD-tj-3my" firstAttribute="top" secondItem="iaG-7e-Sja" secondAttribute="bottom" constant="12" id="N8G-jv-JfT"/>
+                <constraint firstItem="SrD-tj-3my" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="NES-vJ-uIU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jkT-o9-8Fm" secondAttribute="trailing" constant="24" id="PTu-qr-gQ1"/>
+                <constraint firstItem="x8I-Jc-ldc" firstAttribute="top" secondItem="MGe-iA-3O5" secondAttribute="bottom" constant="18" id="Q1d-GG-vRz"/>
+                <constraint firstItem="PlM-VK-3J5" firstAttribute="top" secondItem="x8I-Jc-ldc" secondAttribute="bottom" constant="142" id="Rve-NF-sCC"/>
+                <constraint firstItem="L33-4n-vqX" firstAttribute="leading" secondItem="HKg-QA-NLU" secondAttribute="trailing" constant="24" id="Scr-Ih-rQ0"/>
+                <constraint firstItem="HKg-QA-NLU" firstAttribute="top" secondItem="PlM-VK-3J5" secondAttribute="bottom" constant="16" id="TNg-Ji-PA4"/>
+                <constraint firstItem="SrD-tj-3my" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Trn-Ic-hbw"/>
+                <constraint firstItem="iaG-7e-Sja" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="VkX-Mj-kBA"/>
+                <constraint firstItem="jkT-o9-8Fm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="b2N-FR-ybz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SrD-tj-3my" secondAttribute="trailing" constant="24" id="coG-bN-x3F"/>
+                <constraint firstItem="HKg-QA-NLU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="150" id="diq-NX-MOq"/>
+                <constraint firstItem="4EF-SO-smU" firstAttribute="leading" secondItem="iaG-7e-Sja" secondAttribute="trailing" id="elB-Bf-AR0"/>
+                <constraint firstItem="L33-4n-vqX" firstAttribute="top" secondItem="PlM-VK-3J5" secondAttribute="bottom" constant="16" id="fRg-Zj-vHf"/>
+                <constraint firstItem="L09-74-rVu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="hKZ-oA-GqO"/>
+                <constraint firstItem="eDo-Ke-2iP" firstAttribute="top" secondItem="HKg-QA-NLU" secondAttribute="bottom" constant="16" id="hbo-VD-PJp"/>
+                <constraint firstItem="eMh-j7-aFw" firstAttribute="top" secondItem="SrD-tj-3my" secondAttribute="bottom" constant="12" id="hxg-Mq-tXm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PlM-VK-3J5" secondAttribute="trailing" constant="170" id="jch-KH-VES"/>
+                <constraint firstItem="MGe-iA-3O5" firstAttribute="top" secondItem="eMh-j7-aFw" secondAttribute="bottom" constant="18" id="jfa-b7-SQf"/>
+                <constraint firstItem="eMh-j7-aFw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="kEG-KW-8jy"/>
+                <constraint firstItem="MGe-iA-3O5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="236" id="lGR-ki-amr"/>
+                <constraint firstItem="iaG-7e-Sja" firstAttribute="top" secondItem="jkT-o9-8Fm" secondAttribute="bottom" constant="4" id="qcw-xi-HoK"/>
+                <constraint firstItem="eMh-j7-aFw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uNz-Pk-XWy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eDo-Ke-2iP" secondAttribute="trailing" constant="24" id="yMP-xO-aO1"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gapo-logo" width="151.66667175292969" height="30"/>
+        <image name="google-logo" width="48.333332061767578" height="48"/>
+        <image name="microsoft-logo" width="48.333332061767578" height="48"/>
+        <image name="vietnam-logo" width="85" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

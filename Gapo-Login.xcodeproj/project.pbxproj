@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CEBFD8296AC590B96D30D9D /* Pods_Gapo_Login_Gapo_LoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9CBC6F5B5924BE2C932042 /* Pods_Gapo_Login_Gapo_LoginUITests.framework */; };
+		21EF7E9ECF5633552C8FC019 /* Pods_Gapo_LoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9A1A852E595385A5993D9 /* Pods_Gapo_LoginTests.framework */; };
+		A0DA5292166A80A199BDE383 /* Pods_Gapo_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C81ADC5B26D364310C2122E /* Pods_Gapo_Login.framework */; };
+		B654BC0B28C72FD4000A0D4D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0A28C72FD4000A0D4D /* APIManager.swift */; };
+		B654BC0E28C734B7000A0D4D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0D28C734B7000A0D4D /* Constants.swift */; };
+		B654BC1028C753AB000A0D4D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0F28C753AB000A0D4D /* Result.swift */; };
+		B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC1328C75EFF000A0D4D /* DataClass.swift */; };
 		B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DA28ADE95600388AED /* AppDelegate.swift */; };
 		B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DC28ADE95600388AED /* SceneDelegate.swift */; };
-		B6F124DF28ADE95600388AED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DE28ADE95600388AED /* ViewController.swift */; };
-		B6F124E228ADE95600388AED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E028ADE95600388AED /* Main.storyboard */; };
 		B6F124E428ADE96200388AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E328ADE96200388AED /* Assets.xcassets */; };
 		B6F124E728ADE96200388AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E528ADE96200388AED /* LaunchScreen.storyboard */; };
 		B6F124F228ADE96300388AED /* Gapo_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124F128ADE96300388AED /* Gapo_LoginTests.swift */; };
 		B6F124FC28ADE96400388AED /* Gapo_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124FB28ADE96400388AED /* Gapo_LoginUITests.swift */; };
 		B6F124FE28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124FD28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift */; };
+		B6F1250D28ADFB2700388AED /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1250B28ADFB2700388AED /* MyViewController.swift */; };
+		B6F1250E28ADFB2700388AED /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F1250C28ADFB2700388AED /* MyViewController.xib */; };
+		B6F1251128AF373700388AED /* SFProText.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6F1251028AF373600388AED /* SFProText.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19E6E39CC64A84D70706832A /* Pods-Gapo-Login-Gapo-LoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-Login-Gapo-LoginUITests.release.xcconfig"; path = "Target Support Files/Pods-Gapo-Login-Gapo-LoginUITests/Pods-Gapo-Login-Gapo-LoginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21A3132B7075AAB8E79488E2 /* Pods-Gapo-Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-Login.release.xcconfig"; path = "Target Support Files/Pods-Gapo-Login/Pods-Gapo-Login.release.xcconfig"; sourceTree = "<group>"; };
+		3B78641C10622893AC83C644 /* Pods-Gapo-Login-Gapo-LoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-Login-Gapo-LoginUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gapo-Login-Gapo-LoginUITests/Pods-Gapo-Login-Gapo-LoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		597AC4FD70978EB2C83F8E98 /* Pods-Gapo-LoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-LoginTests.debug.xcconfig"; path = "Target Support Files/Pods-Gapo-LoginTests/Pods-Gapo-LoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DB9A1A852E595385A5993D9 /* Pods_Gapo_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapo_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C81ADC5B26D364310C2122E /* Pods_Gapo_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapo_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B654BC0A28C72FD4000A0D4D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B654BC0D28C734B7000A0D4D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B654BC0F28C753AB000A0D4D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B654BC1328C75EFF000A0D4D /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		B6F124D728ADE95600388AED /* Gapo-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gapo-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F124DA28ADE95600388AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F124DC28ADE95600388AED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B6F124DE28ADE95600388AED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6F124E128ADE95600388AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6F124E328ADE96200388AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F124E628ADE96200388AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F124E828ADE96200388AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +65,12 @@
 		B6F124F728ADE96400388AED /* Gapo-LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gapo-LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F124FB28ADE96400388AED /* Gapo_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gapo_LoginUITests.swift; sourceTree = "<group>"; };
 		B6F124FD28ADE96400388AED /* Gapo_LoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gapo_LoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6F1250B28ADFB2700388AED /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		B6F1250C28ADFB2700388AED /* MyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		B6F1251028AF373600388AED /* SFProText.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFProText.ttf; path = ../../../../Downloads/Notification/SFProText.ttf; sourceTree = "<group>"; };
+		BD9CBC6F5B5924BE2C932042 /* Pods_Gapo_Login_Gapo_LoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapo_Login_Gapo_LoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EC778E7A51BF5AA3B7B4FB /* Pods-Gapo-Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-Login.debug.xcconfig"; path = "Target Support Files/Pods-Gapo-Login/Pods-Gapo-Login.debug.xcconfig"; sourceTree = "<group>"; };
+		D931F2BDC8E68FE0E11A9CC5 /* Pods-Gapo-LoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-LoginTests.release.xcconfig"; path = "Target Support Files/Pods-Gapo-LoginTests/Pods-Gapo-LoginTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DA5292166A80A199BDE383 /* Pods_Gapo_Login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EF7E9ECF5633552C8FC019 /* Pods_Gapo_LoginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEBFD8296AC590B96D30D9D /* Pods_Gapo_Login_Gapo_LoginUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4740E6F92F0B80BDB5370C20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC778E7A51BF5AA3B7B4FB /* Pods-Gapo-Login.debug.xcconfig */,
+				21A3132B7075AAB8E79488E2 /* Pods-Gapo-Login.release.xcconfig */,
+				3B78641C10622893AC83C644 /* Pods-Gapo-Login-Gapo-LoginUITests.debug.xcconfig */,
+				19E6E39CC64A84D70706832A /* Pods-Gapo-Login-Gapo-LoginUITests.release.xcconfig */,
+				597AC4FD70978EB2C83F8E98 /* Pods-Gapo-LoginTests.debug.xcconfig */,
+				D931F2BDC8E68FE0E11A9CC5 /* Pods-Gapo-LoginTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		872A74F15068F3A1FAABDC5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C81ADC5B26D364310C2122E /* Pods_Gapo_Login.framework */,
+				BD9CBC6F5B5924BE2C932042 /* Pods_Gapo_Login_Gapo_LoginUITests.framework */,
+				6DB9A1A852E595385A5993D9 /* Pods_Gapo_LoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B654BC0928C72FB8000A0D4D /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B654BC0A28C72FD4000A0D4D /* APIManager.swift */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
 		B6F124CE28ADE95600388AED = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +139,8 @@
 				B6F124F028ADE96300388AED /* Gapo-LoginTests */,
 				B6F124FA28ADE96400388AED /* Gapo-LoginUITests */,
 				B6F124D828ADE95600388AED /* Products */,
+				4740E6F92F0B80BDB5370C20 /* Pods */,
+				872A74F15068F3A1FAABDC5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +157,17 @@
 		B6F124D928ADE95600388AED /* Gapo-Login */ = {
 			isa = PBXGroup;
 			children = (
+				B654BC0928C72FB8000A0D4D /* API Manager */,
+				B6F1250F28AF371A00388AED /* Font */,
+				B6F1250A28ADFB0300388AED /* Controller */,
 				B6F124DA28ADE95600388AED /* AppDelegate.swift */,
 				B6F124DC28ADE95600388AED /* SceneDelegate.swift */,
-				B6F124DE28ADE95600388AED /* ViewController.swift */,
-				B6F124E028ADE95600388AED /* Main.storyboard */,
 				B6F124E328ADE96200388AED /* Assets.xcassets */,
 				B6F124E528ADE96200388AED /* LaunchScreen.storyboard */,
 				B6F124E828ADE96200388AED /* Info.plist */,
+				B654BC0D28C734B7000A0D4D /* Constants.swift */,
+				B654BC0F28C753AB000A0D4D /* Result.swift */,
+				B654BC1328C75EFF000A0D4D /* DataClass.swift */,
 			);
 			path = "Gapo-Login";
 			sourceTree = "<group>";
@@ -127,6 +189,23 @@
 			path = "Gapo-LoginUITests";
 			sourceTree = "<group>";
 		};
+		B6F1250A28ADFB0300388AED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6F1250B28ADFB2700388AED /* MyViewController.swift */,
+				B6F1250C28ADFB2700388AED /* MyViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6F1250F28AF371A00388AED /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B6F1251028AF373600388AED /* SFProText.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F1250128ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-Login" */;
 			buildPhases = (
+				3030A822CEFB3E0929F3A588 /* [CP] Check Pods Manifest.lock */,
 				B6F124D328ADE95600388AED /* Sources */,
 				B6F124D428ADE95600388AED /* Frameworks */,
 				B6F124D528ADE95600388AED /* Resources */,
+				7B3BF24FF82AA0432AF16D4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F1250428ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-LoginTests" */;
 			buildPhases = (
+				3B84A6993C517B3E9A8C351E /* [CP] Check Pods Manifest.lock */,
 				B6F124E928ADE96300388AED /* Sources */,
 				B6F124EA28ADE96300388AED /* Frameworks */,
 				B6F124EB28ADE96300388AED /* Resources */,
@@ -169,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F1250728ADE96400388AED /* Build configuration list for PBXNativeTarget "Gapo-LoginUITests" */;
 			buildPhases = (
+				48D8BE64EAC441918ACBB835 /* [CP] Check Pods Manifest.lock */,
 				B6F124F328ADE96400388AED /* Sources */,
 				B6F124F428ADE96400388AED /* Frameworks */,
 				B6F124F528ADE96400388AED /* Resources */,
+				1F0E5D91E0F6C504F76D6774 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F1251128AF373700388AED /* SFProText.ttf in Resources */,
 				B6F124E728ADE96200388AED /* LaunchScreen.storyboard in Resources */,
 				B6F124E428ADE96200388AED /* Assets.xcassets in Resources */,
-				B6F124E228ADE95600388AED /* Main.storyboard in Resources */,
+				B6F1250E28ADFB2700388AED /* MyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +338,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F0E5D91E0F6C504F76D6774 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapo-Login-Gapo-LoginUITests/Pods-Gapo-Login-Gapo-LoginUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapo-Login-Gapo-LoginUITests/Pods-Gapo-Login-Gapo-LoginUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gapo-Login-Gapo-LoginUITests/Pods-Gapo-Login-Gapo-LoginUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3030A822CEFB3E0929F3A588 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gapo-Login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B84A6993C517B3E9A8C351E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gapo-LoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48D8BE64EAC441918ACBB835 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gapo-Login-Gapo-LoginUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B3BF24FF82AA0432AF16D4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapo-Login/Pods-Gapo-Login-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapo-Login/Pods-Gapo-Login-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gapo-Login/Pods-Gapo-Login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6F124D328ADE95600388AED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F124DF28ADE95600388AED /* ViewController.swift in Sources */,
+				B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */,
+				B654BC1028C753AB000A0D4D /* Result.swift in Sources */,
+				B654BC0B28C72FD4000A0D4D /* APIManager.swift in Sources */,
 				B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */,
+				B654BC0E28C734B7000A0D4D /* Constants.swift in Sources */,
+				B6F1250D28ADFB2700388AED /* MyViewController.swift in Sources */,
 				B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +489,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6F124E028ADE95600388AED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6F124E128ADE95600388AED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6F124E528ADE96200388AED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +618,7 @@
 		};
 		B6F1250228ADE96400388AED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7EC778E7A51BF5AA3B7B4FB /* Pods-Gapo-Login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,7 +629,6 @@
 				INFOPLIST_FILE = "Gapo-Login/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +646,7 @@
 		};
 		B6F1250328ADE96400388AED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21A3132B7075AAB8E79488E2 /* Pods-Gapo-Login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,7 +657,6 @@
 				INFOPLIST_FILE = "Gapo-Login/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,6 +674,7 @@
 		};
 		B6F1250528ADE96400388AED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597AC4FD70978EB2C83F8E98 /* Pods-Gapo-LoginTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +695,7 @@
 		};
 		B6F1250628ADE96400388AED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D931F2BDC8E68FE0E11A9CC5 /* Pods-Gapo-LoginTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +716,7 @@
 		};
 		B6F1250828ADE96400388AED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B78641C10622893AC83C644 /* Pods-Gapo-Login-Gapo-LoginUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +735,7 @@
 		};
 		B6F1250928ADE96400388AED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E6E39CC64A84D70706832A /* Pods-Gapo-Login-Gapo-LoginUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -16,4 +16,5 @@ target 'Gapo-Login' do
     # Pods for testing
   end
 pod 'Alamofire'
+pod 'SDWebImage', :modular_headers => true
 end

@@ -10,10 +10,23 @@
 		1CEBFD8296AC590B96D30D9D /* Pods_Gapo_Login_Gapo_LoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9CBC6F5B5924BE2C932042 /* Pods_Gapo_Login_Gapo_LoginUITests.framework */; };
 		21EF7E9ECF5633552C8FC019 /* Pods_Gapo_LoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9A1A852E595385A5993D9 /* Pods_Gapo_LoginTests.framework */; };
 		A0DA5292166A80A199BDE383 /* Pods_Gapo_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C81ADC5B26D364310C2122E /* Pods_Gapo_Login.framework */; };
-		B654BC0B28C72FD4000A0D4D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0A28C72FD4000A0D4D /* APIManager.swift */; };
-		B654BC0E28C734B7000A0D4D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0D28C734B7000A0D4D /* Constants.swift */; };
+		B60C93FA28D17B0700438E3B /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C93F928D17B0700438E3B /* LoginResult.swift */; };
+		B60C93FC28D17B1900438E3B /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C93FB28D17B1900438E3B /* LoginData.swift */; };
+		B60C93FE28D1853200438E3B /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C93FD28D1853200438E3B /* DataValue.swift */; };
+		B645449128D853D100E1106C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645449028D853D100E1106C /* Notification.swift */; };
+		B645449328D8541100E1106C /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645449228D8541100E1106C /* DataItem.swift */; };
+		B645449528D8546200E1106C /* Tilte.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645449428D8546200E1106C /* Tilte.swift */; };
+		B645449728D8548400E1106C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645449628D8548400E1106C /* Message.swift */; };
+		B645449928D854A300E1106C /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645449828D854A300E1106C /* Status.swift */; };
+		B645449B28D854C000E1106C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645449A28D854C000E1106C /* Subscription.swift */; };
+		B645449F28D8551A00E1106C /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645449E28D8551A00E1106C /* Highlight.swift */; };
+		B64544A428D855F700E1106C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544A228D855F700E1106C /* CustomTableViewCell.swift */; };
+		B64544A528D855F700E1106C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64544A328D855F700E1106C /* CustomTableViewCell.xib */; };
+		B64544A728DAAF2B00E1106C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544A628DAAF2B00E1106C /* Settings.swift */; };
 		B654BC1028C753AB000A0D4D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0F28C753AB000A0D4D /* Result.swift */; };
 		B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC1328C75EFF000A0D4D /* DataClass.swift */; };
+		B654BC1728D08182000A0D4D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC1528D08182000A0D4D /* NotificationViewController.swift */; };
+		B654BC1828D08182000A0D4D /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B654BC1628D08182000A0D4D /* NotificationViewController.xib */; };
 		B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DA28ADE95600388AED /* AppDelegate.swift */; };
 		B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DC28ADE95600388AED /* SceneDelegate.swift */; };
 		B6F124E428ADE96200388AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E328ADE96200388AED /* Assets.xcassets */; };
@@ -50,10 +63,23 @@
 		597AC4FD70978EB2C83F8E98 /* Pods-Gapo-LoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-LoginTests.debug.xcconfig"; path = "Target Support Files/Pods-Gapo-LoginTests/Pods-Gapo-LoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DB9A1A852E595385A5993D9 /* Pods_Gapo_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapo_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81ADC5B26D364310C2122E /* Pods_Gapo_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapo_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B654BC0A28C72FD4000A0D4D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		B654BC0D28C734B7000A0D4D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B60C93F928D17B0700438E3B /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		B60C93FB28D17B1900438E3B /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		B60C93FD28D1853200438E3B /* DataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
+		B645449028D853D100E1106C /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		B645449228D8541100E1106C /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		B645449428D8546200E1106C /* Tilte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tilte.swift; sourceTree = "<group>"; };
+		B645449628D8548400E1106C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B645449828D854A300E1106C /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		B645449A28D854C000E1106C /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		B645449E28D8551A00E1106C /* Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
+		B64544A228D855F700E1106C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B64544A328D855F700E1106C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		B64544A628DAAF2B00E1106C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		B654BC0F28C753AB000A0D4D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B654BC1328C75EFF000A0D4D /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
+		B654BC1528D08182000A0D4D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		B654BC1628D08182000A0D4D /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		B6F124D728ADE95600388AED /* Gapo-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gapo-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F124DA28ADE95600388AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F124DC28ADE95600388AED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,12 +150,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B654BC0928C72FB8000A0D4D /* API Manager */ = {
+		B60C93F828D17A7400438E3B /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				B654BC0A28C72FD4000A0D4D /* APIManager.swift */,
+				B654BC1328C75EFF000A0D4D /* DataClass.swift */,
+				B654BC0F28C753AB000A0D4D /* Result.swift */,
+				B60C93F928D17B0700438E3B /* LoginResult.swift */,
+				B60C93FB28D17B1900438E3B /* LoginData.swift */,
+				B645449028D853D100E1106C /* Notification.swift */,
+				B645449228D8541100E1106C /* DataItem.swift */,
+				B645449428D8546200E1106C /* Tilte.swift */,
+				B645449628D8548400E1106C /* Message.swift */,
+				B645449828D854A300E1106C /* Status.swift */,
+				B645449A28D854C000E1106C /* Subscription.swift */,
+				B645449E28D8551A00E1106C /* Highlight.swift */,
 			);
-			path = "API Manager";
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		B64544A028D8558400E1106C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B6F1250B28ADFB2700388AED /* MyViewController.swift */,
+				B6F1250C28ADFB2700388AED /* MyViewController.xib */,
+				B654BC1528D08182000A0D4D /* NotificationViewController.swift */,
+				B654BC1628D08182000A0D4D /* NotificationViewController.xib */,
+				B64544A628DAAF2B00E1106C /* Settings.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B64544A128D8559E00E1106C /* CustomViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B64544A228D855F700E1106C /* CustomTableViewCell.swift */,
+				B64544A328D855F700E1106C /* CustomTableViewCell.xib */,
+			);
+			path = CustomViewCell;
 			sourceTree = "<group>";
 		};
 		B6F124CE28ADE95600388AED = {
@@ -157,7 +214,7 @@
 		B6F124D928ADE95600388AED /* Gapo-Login */ = {
 			isa = PBXGroup;
 			children = (
-				B654BC0928C72FB8000A0D4D /* API Manager */,
+				B60C93F828D17A7400438E3B /* JSON */,
 				B6F1250F28AF371A00388AED /* Font */,
 				B6F1250A28ADFB0300388AED /* Controller */,
 				B6F124DA28ADE95600388AED /* AppDelegate.swift */,
@@ -165,9 +222,7 @@
 				B6F124E328ADE96200388AED /* Assets.xcassets */,
 				B6F124E528ADE96200388AED /* LaunchScreen.storyboard */,
 				B6F124E828ADE96200388AED /* Info.plist */,
-				B654BC0D28C734B7000A0D4D /* Constants.swift */,
-				B654BC0F28C753AB000A0D4D /* Result.swift */,
-				B654BC1328C75EFF000A0D4D /* DataClass.swift */,
+				B60C93FD28D1853200438E3B /* DataValue.swift */,
 			);
 			path = "Gapo-Login";
 			sourceTree = "<group>";
@@ -192,8 +247,8 @@
 		B6F1250A28ADFB0300388AED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6F1250B28ADFB2700388AED /* MyViewController.swift */,
-				B6F1250C28ADFB2700388AED /* MyViewController.xib */,
+				B64544A128D8559E00E1106C /* CustomViewCell */,
+				B64544A028D8558400E1106C /* ViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,7 +373,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B654BC1828D08182000A0D4D /* NotificationViewController.xib in Resources */,
 				B6F1251128AF373700388AED /* SFProText.ttf in Resources */,
+				B64544A528D855F700E1106C /* CustomTableViewCell.xib in Resources */,
 				B6F124E728ADE96200388AED /* LaunchScreen.storyboard in Resources */,
 				B6F124E428ADE96200388AED /* Assets.xcassets in Resources */,
 				B6F1250E28ADFB2700388AED /* MyViewController.xib in Resources */,
@@ -449,11 +506,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64544A428D855F700E1106C /* CustomTableViewCell.swift in Sources */,
 				B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */,
+				B60C93FA28D17B0700438E3B /* LoginResult.swift in Sources */,
+				B60C93FE28D1853200438E3B /* DataValue.swift in Sources */,
 				B654BC1028C753AB000A0D4D /* Result.swift in Sources */,
-				B654BC0B28C72FD4000A0D4D /* APIManager.swift in Sources */,
+				B645449528D8546200E1106C /* Tilte.swift in Sources */,
+				B645449328D8541100E1106C /* DataItem.swift in Sources */,
+				B654BC1728D08182000A0D4D /* NotificationViewController.swift in Sources */,
 				B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */,
-				B654BC0E28C734B7000A0D4D /* Constants.swift in Sources */,
+				B645449128D853D100E1106C /* Notification.swift in Sources */,
+				B645449B28D854C000E1106C /* Subscription.swift in Sources */,
+				B645449928D854A300E1106C /* Status.swift in Sources */,
+				B645449F28D8551A00E1106C /* Highlight.swift in Sources */,
+				B645449728D8548400E1106C /* Message.swift in Sources */,
+				B60C93FC28D17B1900438E3B /* LoginData.swift in Sources */,
+				B64544A728DAAF2B00E1106C /* Settings.swift in Sources */,
 				B6F1250D28ADFB2700388AED /* MyViewController.swift in Sources */,
 				B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */,
 			);

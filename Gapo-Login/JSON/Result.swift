@@ -11,11 +11,5 @@ struct Result: Decodable {
     let code: Int
     let message: String
     let data: DataClass
-    
-//    enum CodingKeys: String, CodingKey {
-//        case code
-//        case message
-//        case data = "results"
-//      }
 }
 

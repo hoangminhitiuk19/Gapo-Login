@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Gapo-Login
 //
-//  Created by Dung on 8/18/22.
+//  Created by Dung on 14/9/22.
 //
 
 import UIKit
@@ -12,43 +12,48 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    func scene(_ scene: UIScene,
+               willConnectTo session: UISceneSession,
+               options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = MyViewController()
+//      window.rootViewController = MyViewController()
+        window.rootViewController = UINavigationController(rootViewController: MyViewController())
         self.window = window
         window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
-        // Called as the scene is being released by the system.
-        // This occurs shortly after the scene enters the background, or when its session is discarded.
-        // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+        print("didDisconnect at \(String(describing: getTime))")
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        print("DidBecomeActive at \(String(describing: getTime))")
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+        print("WillResignActive at \(String(describing: getTime))")
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
+        print("WillEnterForeground at \(String(describing: getTime))")
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
+        print("DidEnterBackground at \(String(describing: getTime))")
     }
 
-
+    func getTime() -> String{
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let second = calendar.component(.second, from: date)
+        let result = "\(hour):\(minutes):\(second)"
+        return result
+        
+    }
+        
 }
 

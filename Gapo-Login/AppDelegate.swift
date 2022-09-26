@@ -14,28 +14,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
         let userLoginStatus = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
-        var view = UIViewController()
         if (userLoginStatus == false) || (userLoginStatus == true && checkLogInState() == false)  {
-            view = MyViewController()
+            let controller = MyViewController()
+            setupWindow(root: controller)
         } else {
-            view = NotificationViewController()
+            showHomeScreen()
         }
-        pushScreen(view: view)
+        
         return true
     }
-    
-    func pushScreen(view: UIViewController) {
-        let navigation = UINavigationController(rootViewController: view)
-        window = UIWindow( frame: UIScreen.main.bounds)
-        window?.rootViewController = navigation
+    //----------------------------------------
+    func setupWindow(root: UIViewController) {
+        window?.rootViewController = root
         window?.makeKeyAndVisible()
-        navigation.navigationBar.prefersLargeTitles = true
     }
-    
+    //----------------------------------------
+    func showHomeScreen() {
+        let tableController = NotificationViewController()
+        let tableNavigation = UINavigationController(rootViewController: tableController)
+        tableNavigation.navigationBar.prefersLargeTitles = true
+        
+        let collectionController = NotificationCollectionController()
+        let collectionNavigation = UINavigationController(rootViewController: collectionController)
+        collectionNavigation.navigationBar.prefersLargeTitles = true
+        
+        let tabbarVC = UITabBarController()
+        tabbarVC.viewControllers = [tableNavigation, collectionNavigation]
+        setupWindow(root: tabbarVC)
+    }
+    //----------------------------------------
+    func userDidLogin() {
+        showHomeScreen()
+    }
+    //----------------------------------------
     func checkLogInState() -> Bool {
         let loggedInTime = UserDefaults.standard.integer(forKey: "logInTime")
-        let expireTime = 300000
+        let expireTime = 3000000
         let currentTime = Date.currentTimeStamp
         
         if (currentTime - loggedInTime ) > expireTime {

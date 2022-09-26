@@ -17,10 +17,9 @@ class MyViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var continueWithCode: UIButton!
     @IBOutlet weak var loginLabel: UILabel!
     //--------------------------------------------------
-
     let phoneImage = UIImageView()
     let lockImage = UIImageView()
-
+    //------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.delegate = self
@@ -28,15 +27,15 @@ class MyViewController: UIViewController, UITextFieldDelegate {
         settings()
         self.hideKeyboardWhenTappedAround()
     }
-
+    //------------------------------------------
     @IBAction func didTapLoginButton() {
-        login(email: email,
-              password: generatedPassword)
+        login(email: UserDefaults.standard.string(forKey: "email")!,
+              password: UserDefaults.standard.string(forKey: "generatedPassword") ?? "")
     }
-
+    //------------------------------------------
     func requestCheckEmail() {
         let parameters: [String:Any] = [
-            "email": email
+            "email": UserDefaults.standard.string(forKey: "email")!
                 ]
         let headers: HTTPHeaders = [
                     "Content-Type":"application/json",
@@ -50,22 +49,23 @@ class MyViewController: UIViewController, UITextFieldDelegate {
         request.responseDecodable(of: Result.self) { [self] response in
             if response.value?.code == 200 {
                 semaphore.wait()
-                codeToGenerate = (response.value?.data.salt) ?? "0"
-                generatedPassword = password.passwordSHA256(salt: codeToGenerate) ?? ""
-                
+                codeToGenerate = response.value?.data.salt ?? "0"
+                UserDefaults.standard.set(password.passwordSHA256(salt: codeToGenerate) ?? "",
+                                          forKey: "generatedPassword")
+                UserDefaults.standard.synchronize()
             } else {
                 print("Fail to request check Email")
             }
             semaphore.signal()
         }
     }
-    
+    //------------------------------------------
     func login(email: String, password: String) {
         let parameters: [String:Any] = [
             "device_id": UIDevice.current.model,
             "device_model": "Simulator iPhone 13 Pro Max",
-            "email": email,
-            "password": password,
+            "email": UserDefaults.standard.string(forKey: "email")!,
+            "password": UserDefaults.standard.string(forKey: "generatedPassword")!,
             "client_id": clientID,
             "trusted_device": true
         ]
@@ -73,9 +73,7 @@ class MyViewController: UIViewController, UITextFieldDelegate {
                     "Content-Type":"application/json",
                     "Accept": "application/json"
                 ]
-        
         requestCheckEmail()
-        
         let request = AF.request("\(baseURL)/login",
                                  method: .post,
                                  parameters: parameters,
@@ -84,10 +82,10 @@ class MyViewController: UIViewController, UITextFieldDelegate {
         request.responseDecodable(of: LoginResult.self) { [self] response in
             if response.value?.code == 200 {
                 semaphore.wait()
-                accessTokenValue = response.value?.data?.accessToken ?? ""
-                UserDefaults.standard.set(accessTokenValue, forKey: "accessToken")
-                userIDValue = response.value?.data?.userID ?? 0
-                UserDefaults.standard.set(userIDValue, forKey: "userID")
+                UserDefaults.standard.set(response.value?.data?.accessToken ?? "",
+                                          forKey: "accessToken")
+                UserDefaults.standard.set(response.value?.data?.userID ?? 0,
+                                          forKey: "userID")
                 loggedIn(state: true,
                          time: Date.currentTimeStamp)
                 loginSuccessfully()
@@ -99,14 +97,16 @@ class MyViewController: UIViewController, UITextFieldDelegate {
     }
     //------------------------------------------
     func loginSuccessfully() {
-        let vc = NotificationViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        appdelegate.showHomeScreen()
     }
     //------------------------------------------
     func loggedIn(state: Bool,
                   time: Int) {
-        UserDefaults.standard.set(state, forKey: "isUserLoggedIn")
-        UserDefaults.standard.set(time, forKey: "logInTime")
+        UserDefaults.standard.set(state,
+                                  forKey: "isUserLoggedIn")
+        UserDefaults.standard.set(time,
+                                  forKey: "logInTime")
         UserDefaults.standard.synchronize()
     }
     //------------------------------------------
@@ -115,8 +115,8 @@ class MyViewController: UIViewController, UITextFieldDelegate {
         UserDefaults.standard.synchronize()
     }
     //------------------------------------------
+    // Go to next TextField
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // Go to next TextField
         let nextTag = textField.tag + 1
         if let nextResponder = textField.superview?.viewWithTag(nextTag) {
             nextResponder.becomeFirstResponder()
@@ -148,21 +148,13 @@ class MyViewController: UIViewController, UITextFieldDelegate {
     //------------------------------------------
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == emailTextField {
-            email = emailTextField.text ?? ""
+            UserDefaults.standard.set(emailTextField.text ?? "",
+                                      forKey: "email")
+            UserDefaults.standard.synchronize()
         } else {
             password = passwordTextField.text ?? ""
-            requestCheckEmail()
+            UserDefaults.standard.synchronize()
         }
-    }
-    //------------------------------------------
-    func getTime() -> String {
-        let date = Date()
-        let calendar = Calendar.current
-        let hour = calendar.component(.hour, from: date)
-        let minute = calendar.component(.minute, from: date)
-        let second = calendar.component(.second, from: date)
-        let result = "\(hour):\(minute):\(second)"
-        return result
     }
 }
 

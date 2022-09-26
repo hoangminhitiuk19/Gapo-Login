@@ -10,7 +10,6 @@ import UIKit
 import CommonCrypto
 
 extension MyViewController {
-    
     func setLeftIcon(field: UITextField,
                      image: UIImageView,
                      icon: String) {
@@ -28,21 +27,18 @@ extension MyViewController {
         field.leftView = View
         field.leftViewMode = .always
     }
-    
+    //----------------------------------------
     func setBorder(field: UIButton) {
         field.layer.borderWidth = 1.0
         field.layer.borderColor = UIColor(rgb: 0xDEDFE2).cgColor
     }
-    
+    //----------------------------------------
     func settings() {
         let myString = "Đã có tài khoản? Đăng nhập"
         let loginText = NSMutableAttributedString(string: "Đăng nhập")
         let attributes: [NSAttributedString.Key : Any] = [
             .font : UIFont.appNormalFont,
         ]
-//        let boldAttributes: [NSAttributedString.Key : Any] = [
-//            .font : UIFont.appSemiFont,
-//        ]
         loginText.addAttribute(kCTForegroundColorAttributeName as NSAttributedString.Key,
                                value: setColorAtributes(color: 0x26282C),
                                range: NSRange(location: 0,
@@ -76,9 +72,8 @@ extension MyViewController {
         ]
         return colorAttributes
     }
-    
 }
-
+//----------------------------------------
 extension UIColor {
     convenience init(red: Int,
                      green: Int,
@@ -95,7 +90,7 @@ extension UIColor {
                   blue: CGFloat(blue) / 255.0,
                   alpha: 1.0)
     }
-    
+    //----------------------------------------
     convenience init(rgb: Int) {
         self.init(
             red: (rgb >> 16) & 0xFF,
@@ -104,23 +99,23 @@ extension UIColor {
         )
     }
 }
-
+//----------------------------------------
 extension UIFont {
     static var appFontSize: CGFloat { return 16}
-    
+    //----------------------------------------
     static var appNormalFont: UIFont {
         return UIFont(name: "SF Pro Text-Regular",
                       size: appFontSize)
                 ?? UIFont.systemFont(ofSize: appFontSize)
     }
-    
+    //----------------------------------------
     static var appSemiFont: UIFont {
         return UIFont(name: "SF Pro Text-Bold",
                       size: appFontSize)
                 ?? UIFont.boldSystemFont(ofSize: appFontSize)
     }
 }
-
+//----------------------------------------
 extension String {
     var sha256: String {
         let data = Data(self.utf8)
@@ -133,7 +128,7 @@ extension String {
         }
         return hash.map { String(format: "%02x", $0) }.joined()
     }
-    
+    //----------------------------------------
     //công thức: sha256(sha256(plaintext + salt) + salt)
     public func passwordSHA256(salt: String?) -> String? {
         guard let salt = salt, !salt.isEmpty else {
@@ -143,19 +138,19 @@ extension String {
         return ((plaintext + salt).sha256 + salt).sha256.lowercased()
     }
 }
-
+//----------------------------------------
 extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-    
+    //----------------------------------------
     func hideKeyboardWhenTappedAround() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
 }
-
+//----------------------------------------
 extension Date {
     static var currentTimeStamp: Int{
         return Int(Date().timeIntervalSince1970 * 1000)

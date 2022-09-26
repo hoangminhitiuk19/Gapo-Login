@@ -14,7 +14,6 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var iconImage: UIImageView!
-    
     //------------------------------------------
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +23,7 @@ class CustomTableViewCell: UITableViewCell {
         iconImage.makeRounded()
     }
     //------------------------------------------
-    public func configure(semiboldText: String,
+    public func configureTableViewCell(semiboldText: String,
                           normalText: String,
                           date: String,
                           avatarURL: String,
@@ -39,7 +38,8 @@ class CustomTableViewCell: UITableViewCell {
         let attributedText = NSMutableAttributedString(string: normalText,
                                                        attributes: attributes)
         let range = (normalText as NSString).range(of: semiboldText)
-        attributedText.setAttributes(boldAttributes, range: range)
+        attributedText.setAttributes(boldAttributes,
+                                     range: range)
         textField.attributedText = attributedText
         dateField.text = date
         avatarImage.sd_setImage(with: URL(string: avatarURL),

@@ -23,6 +23,11 @@
 		B64544A428D855F700E1106C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544A228D855F700E1106C /* CustomTableViewCell.swift */; };
 		B64544A528D855F700E1106C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64544A328D855F700E1106C /* CustomTableViewCell.xib */; };
 		B64544A728DAAF2B00E1106C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544A628DAAF2B00E1106C /* Settings.swift */; };
+		B64544AA28DD4FAC00E1106C /* NotificationCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544A828DD4FAC00E1106C /* NotificationCollectionController.swift */; };
+		B64544AB28DD4FAC00E1106C /* NotificationCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64544A928DD4FAC00E1106C /* NotificationCollectionController.xib */; };
+		B64544AF28DD5E4E00E1106C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544AD28DD5E4E00E1106C /* CustomCollectionViewCell.swift */; };
+		B64544B028DD5E4E00E1106C /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64544AE28DD5E4E00E1106C /* CustomCollectionViewCell.xib */; };
+		B64544B228DD6B0C00E1106C /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544B128DD6B0C00E1106C /* ViewControllerExtension.swift */; };
 		B654BC1028C753AB000A0D4D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0F28C753AB000A0D4D /* Result.swift */; };
 		B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC1328C75EFF000A0D4D /* DataClass.swift */; };
 		B654BC1728D08182000A0D4D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC1528D08182000A0D4D /* NotificationViewController.swift */; };
@@ -76,6 +81,11 @@
 		B64544A228D855F700E1106C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		B64544A328D855F700E1106C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		B64544A628DAAF2B00E1106C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B64544A828DD4FAC00E1106C /* NotificationCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCollectionController.swift; sourceTree = "<group>"; };
+		B64544A928DD4FAC00E1106C /* NotificationCollectionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCollectionController.xib; sourceTree = "<group>"; };
+		B64544AD28DD5E4E00E1106C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		B64544AE28DD5E4E00E1106C /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		B64544B128DD6B0C00E1106C /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		B654BC0F28C753AB000A0D4D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B654BC1328C75EFF000A0D4D /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		B654BC1528D08182000A0D4D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +186,9 @@
 				B654BC1528D08182000A0D4D /* NotificationViewController.swift */,
 				B654BC1628D08182000A0D4D /* NotificationViewController.xib */,
 				B64544A628DAAF2B00E1106C /* Settings.swift */,
+				B64544A828DD4FAC00E1106C /* NotificationCollectionController.swift */,
+				B64544A928DD4FAC00E1106C /* NotificationCollectionController.xib */,
+				B64544B128DD6B0C00E1106C /* ViewControllerExtension.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -185,6 +198,8 @@
 			children = (
 				B64544A228D855F700E1106C /* CustomTableViewCell.swift */,
 				B64544A328D855F700E1106C /* CustomTableViewCell.xib */,
+				B64544AD28DD5E4E00E1106C /* CustomCollectionViewCell.swift */,
+				B64544AE28DD5E4E00E1106C /* CustomCollectionViewCell.xib */,
 			);
 			path = CustomViewCell;
 			sourceTree = "<group>";
@@ -376,7 +391,9 @@
 				B654BC1828D08182000A0D4D /* NotificationViewController.xib in Resources */,
 				B6F1251128AF373700388AED /* SFProText.ttf in Resources */,
 				B64544A528D855F700E1106C /* CustomTableViewCell.xib in Resources */,
+				B64544AB28DD4FAC00E1106C /* NotificationCollectionController.xib in Resources */,
 				B6F124E728ADE96200388AED /* LaunchScreen.storyboard in Resources */,
+				B64544B028DD5E4E00E1106C /* CustomCollectionViewCell.xib in Resources */,
 				B6F124E428ADE96200388AED /* Assets.xcassets in Resources */,
 				B6F1250E28ADFB2700388AED /* MyViewController.xib in Resources */,
 			);
@@ -508,6 +525,7 @@
 			files = (
 				B64544A428D855F700E1106C /* CustomTableViewCell.swift in Sources */,
 				B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */,
+				B64544B228DD6B0C00E1106C /* ViewControllerExtension.swift in Sources */,
 				B60C93FA28D17B0700438E3B /* LoginResult.swift in Sources */,
 				B60C93FE28D1853200438E3B /* DataValue.swift in Sources */,
 				B654BC1028C753AB000A0D4D /* Result.swift in Sources */,
@@ -516,8 +534,10 @@
 				B654BC1728D08182000A0D4D /* NotificationViewController.swift in Sources */,
 				B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */,
 				B645449128D853D100E1106C /* Notification.swift in Sources */,
+				B64544AA28DD4FAC00E1106C /* NotificationCollectionController.swift in Sources */,
 				B645449B28D854C000E1106C /* Subscription.swift in Sources */,
 				B645449928D854A300E1106C /* Status.swift in Sources */,
+				B64544AF28DD5E4E00E1106C /* CustomCollectionViewCell.swift in Sources */,
 				B645449F28D8551A00E1106C /* Highlight.swift in Sources */,
 				B645449728D8548400E1106C /* Message.swift in Sources */,
 				B60C93FC28D17B1900438E3B /* LoginData.swift in Sources */,

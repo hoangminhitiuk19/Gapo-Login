@@ -14,9 +14,9 @@ class NotificationViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     let searchController = UISearchController(searchResultsController: nil)
+    let tabBar = UITabBarController()
     var notifications = [DataItem]()
     var searchResults = [DataItem]()
-    
     //------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class NotificationViewController: UIViewController, UISearchBarDelegate {
         self.registerTableViewCells()
         setupSearchBar()
         searchResults = notifications
-        
+        self.tabBarItem.title = "Table"
     }
     //------------------------------------------
     func getNotifications() {
@@ -41,13 +41,11 @@ class NotificationViewController: UIViewController, UISearchBarDelegate {
                                     "x-gapo-user-id": String(UserDefaults.standard.integer(forKey: "userID")),
                                     "x-gapo-workspace-id": "523866125265220"
                 ]
-        
         let request = AF.request("\(notiURL)/notifications",
                                  method: .get,
                                  parameters: parameters,
                                  encoding: URLEncoding.default,
                                  headers: headers)
-        
         request.responseDecodable(of: Notification.self) { [self] response in
             if response.response?.statusCode == 200 {
                 self.notifications = response.value?.data ?? []
@@ -83,21 +81,8 @@ class NotificationViewController: UIViewController, UISearchBarDelegate {
         }
     }
     //------------------------------------------
-    func createDateTime(timestamp: String) -> String {
-        var strDate = ""
-        if let unixTime = Double(timestamp) {
-            let date = Date(timeIntervalSince1970: unixTime)
-            let dateFormatter = DateFormatter()
-            let timezone = TimeZone.current.abbreviation() ?? "GET"
-            dateFormatter.timeZone = TimeZone(abbreviation: timezone)
-            dateFormatter.locale = NSLocale.current
-            dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
-            strDate = dateFormatter.string(from: date)
-        }
-        return strDate
-    }
-    //------------------------------------------
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar,
+                   textDidChange searchText: String) {
         if searchText != "" {
             searchResults = notifications.filter{ $0.message.text.lowercased().contains(searchText.lowercased())
             }
@@ -109,17 +94,17 @@ class NotificationViewController: UIViewController, UISearchBarDelegate {
     }
 }
 //------------------------------------------
-extension NotificationViewController : UITableViewDelegate, UITableViewDataSource {
-    
+extension NotificationViewController : UITableViewDelegate,
+                                        UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+    //----------------------------------------
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         return searchController.isActive ? searchResults.count : notifications.count
     }
-    
+    //----------------------------------------
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell",
@@ -130,7 +115,7 @@ extension NotificationViewController : UITableViewDelegate, UITableViewDataSourc
             } else {
                 datas = notifications[indexPath.row]
             }
-            cell.configure(semiboldText: datas.subjectName,
+            cell.configureTableViewCell(semiboldText: datas.subjectName,
                            normalText: datas.message.text,
                            date: createDateTime(timestamp: String(datas.createdAt)),
                            avatarURL: datas.image,
@@ -141,7 +126,7 @@ extension NotificationViewController : UITableViewDelegate, UITableViewDataSourc
         }
         return UITableViewCell()
     }
-    
+    //----------------------------------------
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
         if notifications[indexPath.row].status.rawValue == "seen_but_unread" {

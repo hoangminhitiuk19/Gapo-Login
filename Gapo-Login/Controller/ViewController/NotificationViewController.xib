@@ -27,12 +27,12 @@
             <viewLayoutGuide key="safeArea" id="CCs-Bx-t7E"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="2Vu-ke-fQZ" firstAttribute="bottom" secondItem="CCs-Bx-t7E" secondAttribute="bottom" id="IU0-mt-Kf6"/>
+                <constraint firstItem="CCs-Bx-t7E" firstAttribute="bottom" secondItem="2Vu-ke-fQZ" secondAttribute="bottom" id="Vpm-qS-Cki"/>
                 <constraint firstItem="2Vu-ke-fQZ" firstAttribute="trailing" secondItem="CCs-Bx-t7E" secondAttribute="trailing" id="YrW-iB-nE3"/>
                 <constraint firstItem="2Vu-ke-fQZ" firstAttribute="top" secondItem="CCs-Bx-t7E" secondAttribute="top" id="hIs-fs-Ow2"/>
                 <constraint firstItem="2Vu-ke-fQZ" firstAttribute="leading" secondItem="CCs-Bx-t7E" secondAttribute="leading" id="olB-ih-PSi"/>
             </constraints>
-            <point key="canvasLocation" x="-243" y="76"/>
+            <point key="canvasLocation" x="-243.47826086956525" y="75.669642857142847"/>
         </view>
     </objects>
     <resources>

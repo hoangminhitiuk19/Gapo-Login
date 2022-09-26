@@ -1,14 +1,14 @@
 //
-//  CustomTableViewCell.swift
+//  CustomCollectionCollectionViewCell.swift
 //  Gapo-Login
 //
-//  Created by Dung on 9/19/22.
+//  Created by Dung on 9/23/22.
 //
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
-
+class CustomCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var dateField: UILabel!
     @IBOutlet weak var textField: UILabel!
     @IBOutlet weak var settingsButton: UIButton!
@@ -17,18 +17,15 @@ class CustomTableViewCell: UITableViewCell {
     //------------------------------------------
     override func awakeFromNib() {
         super.awakeFromNib()
-        textField.lineBreakMode = .byWordWrapping
-        textField.numberOfLines = 2
         avatarImage.makeRounded()
         iconImage.makeRounded()
     }
     //------------------------------------------
-    public func configureTableViewCell(semiboldText: String,
+    public func configureCollectionViewCell(semiboldText: String,
                           normalText: String,
                           date: String,
                           avatarURL: String,
                           iconURL: String ) {
-        
         let attributes: [NSAttributedString.Key : Any] = [
             .font : UIFont.appNormalFont,
         ]
@@ -38,8 +35,7 @@ class CustomTableViewCell: UITableViewCell {
         let attributedText = NSMutableAttributedString(string: normalText,
                                                        attributes: attributes)
         let range = (normalText as NSString).range(of: semiboldText)
-        attributedText.setAttributes(boldAttributes,
-                                     range: range)
+        attributedText.setAttributes(boldAttributes, range: range)
         textField.attributedText = attributedText
         dateField.text = date
         avatarImage.sd_setImage(with: URL(string: avatarURL),
@@ -58,21 +54,7 @@ class CustomTableViewCell: UITableViewCell {
         dateField.text = nil
     }
     //------------------------------------------
-    override func setSelected(_ selected: Bool,
-                              animated: Bool) {
-        super.setSelected(selected,
-                          animated: animated)
-    }
-    //------------------------------------------
     @IBAction func tapSettingsButton(_ sender: UIButton) {
         print("ok settings button")
     }
 }
-//------------------------------------------
-extension UIImageView {
-    func makeRounded() {
-        layer.cornerRadius = self.frame.height / 2
-        clipsToBounds = true
-    }
-}
-

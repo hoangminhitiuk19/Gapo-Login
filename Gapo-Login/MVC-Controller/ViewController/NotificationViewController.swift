@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SDWebImage
+import ObjectMapper
 
 class NotificationViewController: UIViewController, UISearchBarDelegate {
     
@@ -33,7 +34,7 @@ class NotificationViewController: UIViewController, UISearchBarDelegate {
     //------------------------------------------
     func getNotifications() {
         let parameters: [String:Any] = [
-            "limit": 20,
+            "limit": 3,
             "offset": 0
         ]
         let headers: HTTPHeaders = ["Authorization": String(format: "Bearer %@", UserDefaults.standard.string(forKey: "accessToken")!),
@@ -49,6 +50,7 @@ class NotificationViewController: UIViewController, UISearchBarDelegate {
         request.responseDecodable(of: Notification.self) { [self] response in
             if response.response?.statusCode == 200 {
                 self.notifications = response.value?.data ?? []
+                print(response.value?.data as Any)
                 self.tableView.reloadData()
             } else {
                 print("Fail to get notification")

@@ -10,5 +10,4 @@ import Foundation
 enum Status: String, Codable {
     case seenAndRead = "seen_and_read"
     case seenButUnread = "seen_but_unread"
-    
 }

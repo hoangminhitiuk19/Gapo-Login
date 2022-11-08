@@ -69,10 +69,5 @@ class CustomTableViewCell: UITableViewCell {
     }
 }
 //------------------------------------------
-extension UIImageView {
-    func makeRounded() {
-        layer.cornerRadius = self.frame.height / 2
-        clipsToBounds = true
-    }
-}
+
 

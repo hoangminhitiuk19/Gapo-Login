@@ -10,6 +10,14 @@
 		1CEBFD8296AC590B96D30D9D /* Pods_Gapo_Login_Gapo_LoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9CBC6F5B5924BE2C932042 /* Pods_Gapo_Login_Gapo_LoginUITests.framework */; };
 		21EF7E9ECF5633552C8FC019 /* Pods_Gapo_LoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9A1A852E595385A5993D9 /* Pods_Gapo_LoginTests.framework */; };
 		A0DA5292166A80A199BDE383 /* Pods_Gapo_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C81ADC5B26D364310C2122E /* Pods_Gapo_Login.framework */; };
+		B60B067529068779005400DB /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B067329068779005400DB /* CustomTableCell.swift */; };
+		B60B067629068779005400DB /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60B067429068779005400DB /* CustomTableCell.xib */; };
+		B60B06782906A1AF005400DB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B06772906A1AF005400DB /* Extensions.swift */; };
+		B60B067A290B7B84005400DB /* CollectionListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0679290B7B84005400DB /* CollectionListPage.swift */; };
+		B60B067D290B7C38005400DB /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B067B290B7C38005400DB /* CustomCollectionCell.swift */; };
+		B60B067E290B7C38005400DB /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60B067C290B7C38005400DB /* CustomCollectionCell.xib */; };
+		B60B068029138373005400DB /* ListPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B067F29138373005400DB /* ListPageVM.swift */; };
+		B60B0682291383A9005400DB /* CustomCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0681291383A9005400DB /* CustomCellVM.swift */; };
 		B60C93FA28D17B0700438E3B /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C93F928D17B0700438E3B /* LoginResult.swift */; };
 		B60C93FC28D17B1900438E3B /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C93FB28D17B1900438E3B /* LoginData.swift */; };
 		B60C93FE28D1853200438E3B /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C93FD28D1853200438E3B /* DataValue.swift */; };
@@ -28,10 +36,24 @@
 		B64544AF28DD5E4E00E1106C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544AD28DD5E4E00E1106C /* CustomCollectionViewCell.swift */; };
 		B64544B028DD5E4E00E1106C /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64544AE28DD5E4E00E1106C /* CustomCollectionViewCell.xib */; };
 		B64544B228DD6B0C00E1106C /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544B128DD6B0C00E1106C /* ViewControllerExtension.swift */; };
+		B64544B628E1B50900E1106C /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64544B528E1B50900E1106C /* Object.swift */; };
 		B654BC1028C753AB000A0D4D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC0F28C753AB000A0D4D /* Result.swift */; };
 		B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC1328C75EFF000A0D4D /* DataClass.swift */; };
 		B654BC1728D08182000A0D4D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B654BC1528D08182000A0D4D /* NotificationViewController.swift */; };
 		B654BC1828D08182000A0D4D /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B654BC1628D08182000A0D4D /* NotificationViewController.xib */; };
+		B668E96328E307D600FE424E /* SFLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95728E307D500FE424E /* SFLocalService.swift */; };
+		B668E96428E307D600FE424E /* SFViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95828E307D500FE424E /* SFViews.swift */; };
+		B668E96528E307D600FE424E /* SFCollectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95928E307D500FE424E /* SFCollectionPage.swift */; };
+		B668E96628E307D600FE424E /* BindingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95A28E307D500FE424E /* BindingOperators.swift */; };
+		B668E96728E307D600FE424E /* SFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95B28E307D500FE424E /* SFPage.swift */; };
+		B668E96828E307D600FE424E /* SFSectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95C28E307D500FE424E /* SFSectionList.swift */; };
+		B668E96928E307D600FE424E /* SFLocalServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95D28E307D500FE424E /* SFLocalServiceKey.swift */; };
+		B668E96A28E307D600FE424E /* SFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95E28E307D600FE424E /* SFModel.swift */; };
+		B668E96B28E307D600FE424E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E95F28E307D600FE424E /* Protocols.swift */; };
+		B668E96C28E307D600FE424E /* SFListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E96028E307D600FE424E /* SFListPage.swift */; };
+		B668E96D28E307D600FE424E /* SFViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E96128E307D600FE424E /* SFViewModels.swift */; };
+		B668E96E28E307D600FE424E /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E96228E307D600FE424E /* SwiftHEXColors.swift */; };
+		B668E97528E3EEB600FE424E /* TableListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E97428E3EEB600FE424E /* TableListPage.swift */; };
 		B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DA28ADE95600388AED /* AppDelegate.swift */; };
 		B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F124DC28ADE95600388AED /* SceneDelegate.swift */; };
 		B6F124E428ADE96200388AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F124E328ADE96200388AED /* Assets.xcassets */; };
@@ -68,6 +90,14 @@
 		597AC4FD70978EB2C83F8E98 /* Pods-Gapo-LoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapo-LoginTests.debug.xcconfig"; path = "Target Support Files/Pods-Gapo-LoginTests/Pods-Gapo-LoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DB9A1A852E595385A5993D9 /* Pods_Gapo_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapo_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81ADC5B26D364310C2122E /* Pods_Gapo_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapo_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60B067329068779005400DB /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		B60B067429068779005400DB /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
+		B60B06772906A1AF005400DB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B60B0679290B7B84005400DB /* CollectionListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionListPage.swift; sourceTree = "<group>"; };
+		B60B067B290B7C38005400DB /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
+		B60B067C290B7C38005400DB /* CustomCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
+		B60B067F29138373005400DB /* ListPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPageVM.swift; sourceTree = "<group>"; };
+		B60B0681291383A9005400DB /* CustomCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellVM.swift; sourceTree = "<group>"; };
 		B60C93F928D17B0700438E3B /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		B60C93FB28D17B1900438E3B /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		B60C93FD28D1853200438E3B /* DataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
@@ -86,10 +116,24 @@
 		B64544AD28DD5E4E00E1106C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		B64544AE28DD5E4E00E1106C /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		B64544B128DD6B0C00E1106C /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		B64544B528E1B50900E1106C /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		B654BC0F28C753AB000A0D4D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B654BC1328C75EFF000A0D4D /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		B654BC1528D08182000A0D4D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		B654BC1628D08182000A0D4D /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		B668E95728E307D500FE424E /* SFLocalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLocalService.swift; path = ../../../../Downloads/SwiftLib/SFLocalService.swift; sourceTree = "<group>"; };
+		B668E95828E307D500FE424E /* SFViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFViews.swift; path = ../../../../Downloads/SwiftLib/SFViews.swift; sourceTree = "<group>"; };
+		B668E95928E307D500FE424E /* SFCollectionPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFCollectionPage.swift; path = ../../../../Downloads/SwiftLib/SFCollectionPage.swift; sourceTree = "<group>"; };
+		B668E95A28E307D500FE424E /* BindingOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BindingOperators.swift; path = ../../../../Downloads/SwiftLib/BindingOperators.swift; sourceTree = "<group>"; };
+		B668E95B28E307D500FE424E /* SFPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFPage.swift; path = ../../../../Downloads/SwiftLib/SFPage.swift; sourceTree = "<group>"; };
+		B668E95C28E307D500FE424E /* SFSectionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFSectionList.swift; path = ../../../../Downloads/SwiftLib/SFSectionList.swift; sourceTree = "<group>"; };
+		B668E95D28E307D500FE424E /* SFLocalServiceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLocalServiceKey.swift; path = ../../../../Downloads/SwiftLib/SFLocalServiceKey.swift; sourceTree = "<group>"; };
+		B668E95E28E307D600FE424E /* SFModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFModel.swift; path = ../../../../Downloads/SwiftLib/SFModel.swift; sourceTree = "<group>"; };
+		B668E95F28E307D600FE424E /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = ../../../../Downloads/SwiftLib/Protocols.swift; sourceTree = "<group>"; };
+		B668E96028E307D600FE424E /* SFListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFListPage.swift; path = ../../../../Downloads/SwiftLib/SFListPage.swift; sourceTree = "<group>"; };
+		B668E96128E307D600FE424E /* SFViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFViewModels.swift; path = ../../../../Downloads/SwiftLib/SFViewModels.swift; sourceTree = "<group>"; };
+		B668E96228E307D600FE424E /* SwiftHEXColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = ../../../../Downloads/SwiftLib/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		B668E97428E3EEB600FE424E /* TableListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListPage.swift; sourceTree = "<group>"; };
 		B6F124D728ADE95600388AED /* Gapo-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gapo-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F124DA28ADE95600388AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F124DC28ADE95600388AED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +204,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B60B06832918F38C005400DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B60B0681291383A9005400DB /* CustomCellVM.swift */,
+				B60B067F29138373005400DB /* ListPageVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B60B06842918F3D8005400DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B60B067429068779005400DB /* CustomTableCell.xib */,
+				B60B067329068779005400DB /* CustomTableCell.swift */,
+				B60B067C290B7C38005400DB /* CustomCollectionCell.xib */,
+				B60B067B290B7C38005400DB /* CustomCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B60C93F828D17A7400438E3B /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +238,7 @@
 				B645449828D854A300E1106C /* Status.swift */,
 				B645449A28D854C000E1106C /* Subscription.swift */,
 				B645449E28D8551A00E1106C /* Highlight.swift */,
+				B64544B528E1B50900E1106C /* Object.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -204,6 +269,45 @@
 			path = CustomViewCell;
 			sourceTree = "<group>";
 		};
+		B668E95628E3079B00FE424E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B668E95A28E307D500FE424E /* BindingOperators.swift */,
+				B668E95F28E307D600FE424E /* Protocols.swift */,
+				B668E95928E307D500FE424E /* SFCollectionPage.swift */,
+				B668E96028E307D600FE424E /* SFListPage.swift */,
+				B668E95728E307D500FE424E /* SFLocalService.swift */,
+				B668E95D28E307D500FE424E /* SFLocalServiceKey.swift */,
+				B668E95E28E307D600FE424E /* SFModel.swift */,
+				B668E95B28E307D500FE424E /* SFPage.swift */,
+				B668E95C28E307D500FE424E /* SFSectionList.swift */,
+				B668E96128E307D600FE424E /* SFViewModels.swift */,
+				B668E95828E307D500FE424E /* SFViews.swift */,
+				B668E96228E307D600FE424E /* SwiftHEXColors.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B668E96F28E3EE4100FE424E /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				B60B06832918F38C005400DB /* ViewModel */,
+				B668E97228E3EE8F00FE424E /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		B668E97228E3EE8F00FE424E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B668E97428E3EEB600FE424E /* TableListPage.swift */,
+				B60B0679290B7B84005400DB /* CollectionListPage.swift */,
+				B60B06842918F3D8005400DB /* Cell */,
+				B60B06772906A1AF005400DB /* Extensions.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B6F124CE28ADE95600388AED = {
 			isa = PBXGroup;
 			children = (
@@ -229,9 +333,11 @@
 		B6F124D928ADE95600388AED /* Gapo-Login */ = {
 			isa = PBXGroup;
 			children = (
+				B668E96F28E3EE4100FE424E /* MVVM */,
+				B668E95628E3079B00FE424E /* Base */,
 				B60C93F828D17A7400438E3B /* JSON */,
 				B6F1250F28AF371A00388AED /* Font */,
-				B6F1250A28ADFB0300388AED /* Controller */,
+				B6F1250A28ADFB0300388AED /* MVC-Controller */,
 				B6F124DA28ADE95600388AED /* AppDelegate.swift */,
 				B6F124DC28ADE95600388AED /* SceneDelegate.swift */,
 				B6F124E328ADE96200388AED /* Assets.xcassets */,
@@ -259,13 +365,13 @@
 			path = "Gapo-LoginUITests";
 			sourceTree = "<group>";
 		};
-		B6F1250A28ADFB0300388AED /* Controller */ = {
+		B6F1250A28ADFB0300388AED /* MVC-Controller */ = {
 			isa = PBXGroup;
 			children = (
 				B64544A128D8559E00E1106C /* CustomViewCell */,
 				B64544A028D8558400E1106C /* ViewController */,
 			);
-			path = Controller;
+			path = "MVC-Controller";
 			sourceTree = "<group>";
 		};
 		B6F1250F28AF371A00388AED /* Font */ = {
@@ -389,8 +495,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B654BC1828D08182000A0D4D /* NotificationViewController.xib in Resources */,
+				B60B067629068779005400DB /* CustomTableCell.xib in Resources */,
 				B6F1251128AF373700388AED /* SFProText.ttf in Resources */,
 				B64544A528D855F700E1106C /* CustomTableViewCell.xib in Resources */,
+				B60B067E290B7C38005400DB /* CustomCollectionCell.xib in Resources */,
 				B64544AB28DD4FAC00E1106C /* NotificationCollectionController.xib in Resources */,
 				B6F124E728ADE96200388AED /* LaunchScreen.storyboard in Resources */,
 				B64544B028DD5E4E00E1106C /* CustomCollectionViewCell.xib in Resources */,
@@ -524,13 +632,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64544A428D855F700E1106C /* CustomTableViewCell.swift in Sources */,
+				B668E96528E307D600FE424E /* SFCollectionPage.swift in Sources */,
+				B668E96A28E307D600FE424E /* SFModel.swift in Sources */,
 				B654BC1428C75EFF000A0D4D /* DataClass.swift in Sources */,
+				B60B0682291383A9005400DB /* CustomCellVM.swift in Sources */,
 				B64544B228DD6B0C00E1106C /* ViewControllerExtension.swift in Sources */,
 				B60C93FA28D17B0700438E3B /* LoginResult.swift in Sources */,
+				B668E96D28E307D600FE424E /* SFViewModels.swift in Sources */,
+				B668E96E28E307D600FE424E /* SwiftHEXColors.swift in Sources */,
+				B60B067D290B7C38005400DB /* CustomCollectionCell.swift in Sources */,
+				B668E96628E307D600FE424E /* BindingOperators.swift in Sources */,
 				B60C93FE28D1853200438E3B /* DataValue.swift in Sources */,
 				B654BC1028C753AB000A0D4D /* Result.swift in Sources */,
+				B64544B628E1B50900E1106C /* Object.swift in Sources */,
 				B645449528D8546200E1106C /* Tilte.swift in Sources */,
 				B645449328D8541100E1106C /* DataItem.swift in Sources */,
+				B60B06782906A1AF005400DB /* Extensions.swift in Sources */,
 				B654BC1728D08182000A0D4D /* NotificationViewController.swift in Sources */,
 				B6F124DB28ADE95600388AED /* AppDelegate.swift in Sources */,
 				B645449128D853D100E1106C /* Notification.swift in Sources */,
@@ -539,11 +656,22 @@
 				B645449928D854A300E1106C /* Status.swift in Sources */,
 				B64544AF28DD5E4E00E1106C /* CustomCollectionViewCell.swift in Sources */,
 				B645449F28D8551A00E1106C /* Highlight.swift in Sources */,
+				B60B067529068779005400DB /* CustomTableCell.swift in Sources */,
 				B645449728D8548400E1106C /* Message.swift in Sources */,
 				B60C93FC28D17B1900438E3B /* LoginData.swift in Sources */,
+				B60B067A290B7B84005400DB /* CollectionListPage.swift in Sources */,
 				B64544A728DAAF2B00E1106C /* Settings.swift in Sources */,
 				B6F1250D28ADFB2700388AED /* MyViewController.swift in Sources */,
+				B668E96728E307D600FE424E /* SFPage.swift in Sources */,
+				B668E96828E307D600FE424E /* SFSectionList.swift in Sources */,
+				B668E96328E307D600FE424E /* SFLocalService.swift in Sources */,
+				B668E97528E3EEB600FE424E /* TableListPage.swift in Sources */,
 				B6F124DD28ADE95600388AED /* SceneDelegate.swift in Sources */,
+				B668E96B28E307D600FE424E /* Protocols.swift in Sources */,
+				B668E96C28E307D600FE424E /* SFListPage.swift in Sources */,
+				B668E96928E307D600FE424E /* SFLocalServiceKey.swift in Sources */,
+				B668E96428E307D600FE424E /* SFViews.swift in Sources */,
+				B60B068029138373005400DB /* ListPageVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

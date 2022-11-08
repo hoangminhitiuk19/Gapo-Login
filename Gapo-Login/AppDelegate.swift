@@ -32,12 +32,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     //----------------------------------------
     func showHomeScreen() {
-        let tableController = NotificationViewController()
-        let tableNavigation = UINavigationController(rootViewController: tableController)
+//        let tableController = NotificationViewController()
+        let vm = ListPageVM(model: nil)
+        let tableListPage = TableListPage(viewModel: vm)
+        let vm2 = ListPageVM(model: nil)
+        let collectionListPage = CollectionListPage(viewModel: vm2)
+        let tableNavigation = UINavigationController(rootViewController: tableListPage)
         tableNavigation.navigationBar.prefersLargeTitles = true
         
-        let collectionController = NotificationCollectionController()
-        let collectionNavigation = UINavigationController(rootViewController: collectionController)
+//        let collectionController = NotificationCollectionController()
+        let collectionNavigation = UINavigationController(rootViewController: collectionListPage)
         collectionNavigation.navigationBar.prefersLargeTitles = true
         
         let tabbarVC = UITabBarController()
@@ -51,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //----------------------------------------
     func checkLogInState() -> Bool {
         let loggedInTime = UserDefaults.standard.integer(forKey: "logInTime")
-        let expireTime = 3000000
+        let expireTime = 3000000000
         let currentTime = Date.currentTimeStamp
         
         if (currentTime - loggedInTime ) > expireTime {

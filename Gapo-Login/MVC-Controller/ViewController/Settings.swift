@@ -156,3 +156,10 @@ extension Date {
         return Int(Date().timeIntervalSince1970 * 1000)
     }
 }
+
+extension UIImageView {
+    func makeRounded() {
+        layer.cornerRadius = self.frame.height / 2
+        clipsToBounds = true
+    }
+}

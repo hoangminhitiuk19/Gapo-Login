@@ -52,6 +52,8 @@ class ListPageVM: ListViewModel<SFModel, CustomCellVM> {
         let offset = allItems.count
         getNotifications(offset: offset)
     }
+    
+    
     // MARK: GET NOTIFICATION
     func getNotifications(offset: Int) {
         guard isLoading == false else { return }
@@ -75,7 +77,6 @@ class ListPageVM: ListViewModel<SFModel, CustomCellVM> {
         request.responseDecodable(of: Notification.self) { [weak self] response in
             if response.response?.statusCode == 200 {
                 let notifications = response.value?.data ?? []
-                print(response)
                 self?.didGetItems(notifications, offset: offset)
             } else {
                 print("Fail to get notification")

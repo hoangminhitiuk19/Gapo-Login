@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 import RxSwift
 import Action
-
+// MARK: COLLECTIONLISTPAGE
 class CollectionListPage: SFCollectionPage<ListPageVM>, UISearchBarDelegate {
     let searchController = UISearchController(searchResultsController: nil)
     let tabBar = UITabBarController()
@@ -70,5 +70,28 @@ class CollectionListPage: SFCollectionPage<ListPageVM>, UISearchBarDelegate {
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-}
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
 
+                if tabBarController.selectedViewController == viewController {
+                    if let navController = viewController as? UINavigationController {
+                        if let myViewController  = navController.topViewController , let homeController = myViewController as? RefreshProtocol {
+                            homeController.scrollToTopRefresh()
+                        }
+                    }
+                    else {
+                       if let homeController = viewController as? RefreshProtocol {
+                            homeController.scrollToTopRefresh()
+                        }
+                    }
+                }
+        return true
+    }
+}
+// MARK: EXTESION COLLECTIONLISTPAGE
+extension CollectionListPage: RefreshProtocol {
+    func scrollToTopRefresh () {
+        let indexPath = IndexPath(row: 0, section: 0)
+        self.collectionView.scrollToItem(at: indexPath, at: .top, animated: true)
+    }
+}

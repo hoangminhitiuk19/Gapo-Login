@@ -9,10 +9,14 @@ import UIKit
 import Action
 import RxCocoa
 import Alamofire
-
+// MARK: PROTOCOL
+protocol RefreshProtocol {
+    func scrollToTopRefresh()
+}
+// MARK: TABLELISTPAGE
 class TableListPage: SFListPage<ListPageVM>,
-                            UISearchBarDelegate {
-    
+                            UISearchBarDelegate, UITabBarControllerDelegate {
+    var previousController: UIViewController?
     let searchController = UISearchController(searchResultsController: nil)
     let tabBar = UITabBarController()
     var isWaiting = false
@@ -23,6 +27,7 @@ class TableListPage: SFListPage<ListPageVM>,
     override func initialize() {
         super.initialize()
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.tabBarController?.delegate = self
         self.title = "Table List Page"
         tableView.registerNibsWith(names: [
             CustomTableCell.nibName
@@ -67,8 +72,24 @@ class TableListPage: SFListPage<ListPageVM>,
             self.viewModel?.loadMore()
         }
     }
-}
 
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+
+                if tabBarController.selectedViewController == viewController {
+                    if let navController = viewController as? UINavigationController {
+                        if let myViewController  = navController.topViewController , let homeController = myViewController as? RefreshProtocol {
+                            homeController.scrollToTopRefresh()
+                        }
+                    }
+                    else {
+                       if let homeController = viewController as? RefreshProtocol {
+                            homeController.scrollToTopRefresh()
+                        }
+                    }
+                }
+        return true
+    }
+}
 
 // MARK: EXTENSION UISCROLLVIEW
 extension UIScrollView {
@@ -78,3 +99,11 @@ extension UIScrollView {
      self.setContentOffset(bottomOffset, animated: animated)
   }
 }
+// MARK: EXTENSION TABLELISTPAGE
+extension TableListPage: RefreshProtocol {
+    func scrollToTopRefresh () {
+        let indexPath = IndexPath(row: 0, section: 0)
+        self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+    }
+}
+
